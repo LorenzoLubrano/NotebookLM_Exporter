@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "NotebookLM Chat Exporter Pro",
+  "version": "1.1",
+  "description": "Esporta la chat di NotebookLM in Markdown pulito, senza menu e con formattazione preservata.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://notebooklm.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
